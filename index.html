@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OperacionesLesmes</title>
+</head>
+<body>
+    <script type="text/javascript">
+    var n1 = prompt("Ingrese el primer numero: ","");
+    var n2 = prompt("Ingrese el segundo numero: ","");
+    var ans = prompt("Para sumar coloque 1 \nPara restar coloque 2 \nPara multiplicar coloque 3 \nPara dividir coloque 4 \n¿Que desea hacer con los 2 numeros?");
+   
+    if (ans ==1){
+    var s= parseFloat(n1) + parseFloat(n2);
+    alert(n1+" + "+n2+" = "+ s);
+    }
+    if (ans ==2){
+    var r= parseFloat(n1) - parseFloat(n2);
+    alert(n1+" - "+n2+" = "+ r);
+    }
+    if (ans ==3){
+    var m= parseFloat(n1) * parseFloat(n2);
+    alert(n1+" x "+n2+" = "+ m);
+    }
+    if (ans ==4){
+    var d= parseFloat(n1) / parseFloat(n2);
+    alert(n1+" / "+n2+" = "+ d);
+    }
+    </script>
+</body>
+</html>
