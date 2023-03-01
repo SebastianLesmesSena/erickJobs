@@ -1,11 +1,11 @@
 const http = require('http');
-const myDateTime = require('dateTime.js');
+const fs = require('fs');
+
 
 http.createServer(function(req,res){
-    res.writeHead(200,{'Content-Type':'text/html'}(myDateTime.myDateTime()));
-    res.end();
-    return res();
-}).listen(8080);
-
-
-console.log(myDateTime.myDateTime());
+    fs.readFile('ind.html', function(err,data){
+            res.writeHead(200,{'Content-Type': 'text/html'});
+            res.write(data);
+            return res.end();
+    });
+}).listen(8080)
