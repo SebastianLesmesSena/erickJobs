@@ -20,6 +20,8 @@ const server = http.createServer((req, res) => {
 
   // Enviamos la URL actualizada como respuesta HTTP con un código de estado 200
   res.writeHead(200, {'Content-Type': 'text/html'});
-  res.write(`<html><body> year=${currentDate.getFullYear()}, month=${currentDate.getMonth() + 1}, day=${currentDate.getDate()}</body></html>`);
+  res.write(`<html><body> year=${currentDate.getFullYear()}</body></html>`);
+  res.write(`<html><body> month=${currentDate.getMonth() + 1}</body></html>`);
+  res.write(`<html><body> day=${currentDate.getDate()}</body></html>`);
   res.end();
 }).listen(8000);
