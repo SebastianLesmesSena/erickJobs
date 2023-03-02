@@ -22,8 +22,4 @@ const server = http.createServer((req, res) => {
   res.writeHead(200, {'Content-Type': 'text/html'});
   res.write(`<html><body> year=${currentDate.getFullYear()}, month=${currentDate.getMonth() + 1}, day=${currentDate.getDate()}</body></html>`);
   res.end();
-});
-
-server.listen(8000, () => {
-  console.log('Servidor escuchando en puerto 8000');
-});
+}).listen(8000);
